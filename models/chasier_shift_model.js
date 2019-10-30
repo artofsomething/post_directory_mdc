@@ -1,6 +1,8 @@
 var mongoose = require('mongoose');
+var ObjectId = mongoose.Schema.Types.ObjectId;
 
-var chasier_shiftScheme = new mongoose.Schema({
+var chasierShiftScheme = new mongoose.Schema({
+  ID : ObjectId,
   uid : String,
   tanggal : Date,
   balance : String,
@@ -8,4 +10,4 @@ var chasier_shiftScheme = new mongoose.Schema({
   transaction : String
 });
 
-module.exports = mongoose.model('chasier_shift', chasier_shiftScheme);
+module.exports = mongoose.model('cashier_shift', chasierShiftScheme);

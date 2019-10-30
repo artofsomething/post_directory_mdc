@@ -8,10 +8,7 @@ var purchase_orderSchema = new mongoose.Schema({
     qty : String,
     total : String,
     jenis : String,
-    status : {
-        enum : ['open','pending','finish','installment','send','return'],
-        description : 'can only be one of the enum values'
-    },
+    status : String, // Open,Pending,Finish,Installment,Send,Return
     pajak : String,
     cicilan : String,
     user : String,

@@ -9,14 +9,8 @@ var utang_piutangSchema = new mongoose.Schema({
     total : String,
     sisa : String,
     terbayar : String,
-    status : {
-        enum : ['Open','Installment','Finish'],
-        description : 'can only used one of the enum values'
-    },
-    tipe : {
-        emum : ['Sales','Purchase'],
-        description : 'can only used one of the enum values'
-    }
+    status : String, //Open,Installment,Finish
+    tipe : String,//Sales,Purchase,
 
 });
 

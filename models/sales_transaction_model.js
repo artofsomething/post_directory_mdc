@@ -9,15 +9,9 @@ var sales_transactionSchema = new mongoose.Schema({
     diskon : String,
     pajak : String,
     total : String,
-    jenis : {
-        enum : [ 'Cash', 'Credit', 'Card', 'Debit Card', 'Voucher', 'Wechat Pay', 'Alipay', 'Other', 'Split Payment Type'],
-        description : 'Can only be one of the enum values'
-    },
+    jenis : String,//Cash,Credit Card,Debit Card, Voucher,Wechatpay, Alipay, Other, Split Payment Type
     no_tickets : String,
-    status : {
-        enum : ['Open','Hold','Finish','Refund','Cacnel'],
-        description : 'Can only be one of them values'
-    },
+    status : String, // Open,Hold, Finish,Refund, Cancel 
     note : String
 
 });

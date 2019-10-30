@@ -10,4 +10,4 @@ var operasional_costSchema = new mongoose.Schema({
     
 });
 
-module.exports = mongoose.model('detail_uptp', operasional_costSchema);
+module.exports = mongoose.model('operation_cost', operasional_costSchema);

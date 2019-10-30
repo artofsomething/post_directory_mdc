@@ -2,7 +2,7 @@ var express = require('express');
 var app = express.Router();
 //var request = require('request');
 var mongo = require('mongoose');
-var mod = require('../models/supplier.js');
+var mod = require('../models/supplier_model.js');
 
 var model = mongo.model('supplier', mod.PostSchema, 'supplier');
 

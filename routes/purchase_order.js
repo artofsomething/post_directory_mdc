@@ -4,7 +4,7 @@ var app = express.Router();
 var mongo = require('mongoose');
 var mod = require('../models/purchase_order_model.js');
 
-var model = mongo.model('pruchase_order', mod.PostSchema, 'pruchase_order');
+var model = mongo.model('purchase_order', mod.PostSchema, 'pruchase_order');
 
 app.post('/api/savePurchaseOrder', function (req, res) {
     mod = new model(req.body);

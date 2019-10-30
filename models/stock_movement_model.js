@@ -8,14 +8,8 @@ var stock_movementSchema = new mongoose.Schema({
     qty : String,
     last_qty : String,
     exp_date : Date,
-    tipe : {
-        enum : ['Out','In','Refund','Broken','Disposal'],
-        description : 'Can only use one value'
-    },
-    status : {
-        enum : ['Close','Open','Adjusment'],
-        description : 'Can only use one value'
-    },
+    tipe : String, //Out,In,Refund, Broken,Disposal
+    status : String, //Close,Open,Adjustment
     note : String,
     user : String
 

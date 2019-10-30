@@ -2,7 +2,7 @@ var express = require('express');
 var app = express.Router();
 //var request = require('request');
 var mongo = require('mongoose');
-var mod = require('../models/stock_movement.js');
+var mod = require('../models/stock_movement_model.js');
 
 var model = mongo.model('stock_movement', mod.PostSchema, 'stock_movement');
 

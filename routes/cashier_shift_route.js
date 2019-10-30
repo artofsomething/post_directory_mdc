@@ -2,7 +2,7 @@ var express = require('express');
 var app = express.Router();
 //var request = require('request');
 var mongo = require('mongoose');
-var mod = require('../models/cashier_shift_model.js');
+var mod = require('../models/chasier_shift_model');
 
 var model = mongo.model('cashier_shift', mod.PostSchema, 'cashier_shift');
 

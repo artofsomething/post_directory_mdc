@@ -5,10 +5,7 @@ var stock_opnameSchema = new mongoose.Schema({
     tanggal : String,
     uid : String,
     supervisior : String,
-    status : {
-        enum : ['Open','Finish'],
-        description : 'Can only be used one of the enum Values'
-    },
+    status : String,//Open,Finish
     differences : String,
     password : String,
     total_item : String,

@@ -11,4 +11,4 @@ var detail_utptSchema = new mongoose.Schema({
     
 });
 
-module.exports = mongoose.model('detail_uptp', detail_uptpSchema);
+module.exports = mongoose.model('detail_utpt', detail_utptSchema);
